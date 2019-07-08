@@ -1,3 +1,4 @@
+jest.setTimeout(3000);
 const Page = require('./helper/page');
 let page;
 beforeEach(async () => {
@@ -26,7 +27,7 @@ describe('When logged in', async () => {
             const errorMessage = await page.getContentOf('div.red-text');
             expect(errorMessage).toContain('You must provide a value')
         })
-    }) 
+    })
     describe('When using valid form input', async () => {
         let title = 'This is the Title'
         let content = 'This is the Content'

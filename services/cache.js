@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const redis = require('redis');
 const keys = require('../config/keys');
-const client = redis.createClient(redisUrl);
 const exec = mongoose.Query.prototype.exec;
 const util = require('util');
 const client = redis.createClient(keys.redisUrl)

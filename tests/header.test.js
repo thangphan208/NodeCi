@@ -1,3 +1,4 @@
+jest.setTimeout(3000);
 const Page = require('./helper/page')
 let page;
 
