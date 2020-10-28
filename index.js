@@ -7,7 +7,7 @@ const keys = require('./config/keys');
 
 
 var hello;
-
+var hihi;
 
 require('./models/User');
 require('./models/Blog');
