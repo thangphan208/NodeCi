@@ -6,14 +6,13 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 
 
-var hello;
-var hihi;
 
 require('./models/User');
 require('./models/Blog');
 require('./services/passport');
 require('./services/cache');
 
+var new;
 
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
