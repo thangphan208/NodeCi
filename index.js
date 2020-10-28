@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 
 
+var hello;
 
 
 require('./models/User');
